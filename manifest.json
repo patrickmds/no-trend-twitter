@@ -1,0 +1,21 @@
+{
+    "name": "no-trend-twitter",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://twitter.com/*"],
+            "js": ["content.js"],
+            "css": ["hide.css"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "No-trend-Twitter"
+    }
+}
