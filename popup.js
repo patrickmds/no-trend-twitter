@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 chrome.tabs.insertCSS(tabs[i].id, {
                     code: 'div[aria-label="Timeline: Trending now"]{ display: ' + display + ' !important}'
                 });
+
+                // tratamento pra funcionar quando ta em pt-br pq brasileiro tbm é gente
+                chrome.tabs.insertCSS(tabs[i].id, {
+                    code: 'div[aria-label="Timeline: Assuntos do momento"]{ display: ' + display + ' !important}'
+                });
             }
         });
     });
