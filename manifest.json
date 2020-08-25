@@ -16,6 +16,7 @@
     ],
     "browser_action": {
         "default_popup": "popup.html",
-        "default_title": "No-trend-Twitter"
+        "default_title": "No-trend-Twitter",
+        "default_icon": "icon.png"
     }
 }
