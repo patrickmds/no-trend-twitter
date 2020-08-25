@@ -1,5 +1,5 @@
 {
-    "name": "no-trend-twitter",
+    "name": "No Trend Twitter",
     "version": "1.0",
     "manifest_version": 2,
     "permissions": [
@@ -16,7 +16,7 @@
     ],
     "browser_action": {
         "default_popup": "popup.html",
-        "default_title": "No-trend-Twitter",
+        "default_title": "No Trend Twitter",
         "default_icon": "icon.png"
     }
 }

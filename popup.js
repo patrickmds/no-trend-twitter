@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         chrome.tabs.query({url: "*://twitter.com/*"}, (tabs) => {
             for (let i = 0; i < tabs.length; i++) {
-                console.log('teste');
                 chrome.tabs.insertCSS(tabs[i].id, {
                     code: 'div[aria-label="Timeline: Trending now"]{ display: ' + display + ' !important}'
                 });
