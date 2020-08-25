@@ -1,3 +1,9 @@
+window.browser = (function () {
+  return window.msBrowser ||
+    window.browser ||
+    window.chrome;
+})();
+
 document.addEventListener('DOMContentLoaded', function () {
     let toggleTrend = document.getElementById('toggle-trend');
 
@@ -9,14 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             display = 'flex';
         }
-        chrome.tabs.query({url: "*://twitter.com/*"}, (tabs) => {
+        window.browser.tabs.query({url: "*://twitter.com/*"}, (tabs) => {
             for (let i = 0; i < tabs.length; i++) {
-                chrome.tabs.insertCSS(tabs[i].id, {
+                window.browser.tabs.insertCSS(tabs[i].id, {
                     code: 'div[aria-label="Timeline: Trending now"]{ display: ' + display + ' !important}'
                 });
 
                 // tratamento pra funcionar quando ta em pt-br pq brasileiro tbm é gente
-                chrome.tabs.insertCSS(tabs[i].id, {
+                window.browser.tabs.insertCSS(tabs[i].id, {
                     code: 'div[aria-label="Timeline: Assuntos do momento"]{ display: ' + display + ' !important}'
                 });
             }
