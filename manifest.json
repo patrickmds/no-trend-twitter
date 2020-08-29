@@ -2,6 +2,11 @@
     "name": "No Trend Twitter",
     "version": "1.0",
     "manifest_version": 2,
+    "description": "An extension to hide the Twitter Trending Topics",
+    "icons": {
+        "48": "icon.png",
+        "96": "icon.png"
+    },
     "permissions": [
         "tabs",
         "http://*/*",
