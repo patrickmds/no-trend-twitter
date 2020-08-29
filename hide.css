@@ -1,3 +1,7 @@
 div[aria-label="Timeline: Trending now"]{
     display:none !important;
 }
+
+div[aria-label="Timeline: Assuntos do momento"]{
+    display:none !important;
+}
