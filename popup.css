@@ -1,8 +1,26 @@
+html,body {
+    text-align: center;
+    background-color: #ddd;
+    margin: 0;
+}
+
+h3 {
+    color: white;
+    background-color: #555;
+    width: 130px;
+    padding: 5px;
+    margin: 0;
+}
+
+.wrapper {
+    padding: 5px;
+}
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin: 0 auto;
 }
 
 .switch input {
